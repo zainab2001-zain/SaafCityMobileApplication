@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/homefragment"
+    android:background="@color/app_background"
+    tools:context="com.buiseness.saafcitybuiseness.ui.home.HomeFragment">
+
+    <!-- Guideline for vertical center -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/log_complaint_btn"
+        android:layout_width="270dp"
+        android:layout_height="91dp"
+        android:layout_below="@id/guideline_vertical_center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="290dp"
+
+        android:text="Log a Complaint"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:elevation="10dp"
+        android:backgroundTint="#1B3501"
+        android:stateListAnimator="@null" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/log_complaint_btn"
+        android:layout_marginTop="90dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/untitled_design__2_" />
+
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fbfaf8"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#CDA9F1A9"
+        android:padding="12dp"
+
+        >
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/displayno"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#071508"
+            android:text="Complaint no "
+            />
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/complaintno"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="-35dp"
+            android:textColor="#071508"
+            android:layout_marginLeft="170dp"
+            />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/displaystatus"
+            android:textSize="25sp"
+            android:text="Status"
+            android:textColor="#071508"
+            android:layout_marginTop="3dp"
+            />
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:textSize="25sp"
+            android:layout_marginTop="-34dp"
+            android:textStyle="bold"
+            android:textColor="#071508"
+            android:layout_marginLeft="170dp"
+
+
+            />
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/view_btn"
+            android:textSize="25sp"
+            android:text="View"
+            app:backgroundTint="#1B3501"
+            android:textColor="@color/white"
+
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

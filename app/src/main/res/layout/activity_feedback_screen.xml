@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfaf8"
+    tools:context="com.buiseness.saafcitybuiseness.FeedbackScreen">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginBottom="675dp"
+        android:background="#18421A"
+        app:popupTheme="@style/Theme.SaafCity.PopupOverlay"
+        app:titleTextAppearance="@string/camera"
+        tools:layout_editor_absoluteX="-38dp">
+
+        <TextView
+            android:id="@+id/camerascreen_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:letterSpacing="0.1"
+            android:text="Feedback"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_marginTop="55dp"
+        android:layout_width="410dp"
+        android:layout_height="700dp">
+
+        <TextView
+            android:id="@+id/Feedback_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="@font/jockey_one"
+            android:text="FeedBack"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Feedbck_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/Feedback_heading"
+            android:textSize="25sp"
+            android:textColor="#393E39"
+            android:layout_marginLeft="50dp"
+            android:text="Please rate the drivers work"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:outlineAmbientShadowColor="#6E591A"
+            android:outlineSpotShadowColor="#95771C"
+            android:theme="@style/RatingBar"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="80dp"
+            android:layout_below="@id/Feedbck_Description"
+
+            />
+
+        <EditText
+            android:id="@+id/textbox"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/ratingbar"
+            android:hint="Write your feedback here....."
+            android:layout_marginTop="30dp"
+            android:background="#309F9D9D"
+            android:textAlignment="center"
+            android:layout_marginLeft="50dp"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textbox"
+            android:layout_marginTop="47dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:text="Submit"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            app:backgroundTint="#1B3501" />
+    </RelativeLayout>
+</RelativeLayout>

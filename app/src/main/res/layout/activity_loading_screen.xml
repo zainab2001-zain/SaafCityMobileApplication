@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfaf8"
+    tools:context="com.buiseness.saafcitybuiseness.LoadingScreen">
+
+
+    <androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar1"
+    android:layout_width="match_parent"
+
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginBottom="675dp"
+    android:background="#18421A"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    app:popupTheme="@style/Theme.SaafCity.PopupOverlay"
+    app:titleTextAppearance="@string/camera"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:letterSpacing="0.1"
+        android:text="Complaint In Progress"
+
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+</androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/contentloadingscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="180dp"
+       >
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif-black"
+            android:text="We are processing your complaint plz wait!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:layout_centerHorizontal="true"
+             />
+
+
+        <ProgressBar
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+android:id="@+id/progressbar"
+            android:layout_below="@id/textview"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <TextView
+            android:id="@+id/Details_TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-black"
+
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/textview"
+            />
+        <Button
+            android:id="@+id/verificationbtn"
+            android:layout_width="167dp"
+            android:layout_height="51dp"
+            android:layout_below="@id/Details_TextView"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:layout_centerHorizontal="true"
+
+            android:backgroundTint="@color/design_default_color_on_secondary"
+            android:text="Verification"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

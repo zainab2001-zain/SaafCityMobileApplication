@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Saaf City</string>
+    <string name="title_activity_dashboard_screen">Dashboard_Screen</string>
+    <string name="camera">Log Your Complaint</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_rejectedcomplaints">Rejected Complaints</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nav_header_subtitle">Saafcitybuiseness@gmail.com</string>
+    <string name="nav_header_title">Saaf City</string>
+    <string name="menu_slideshow">Resolved Complaints</string>
+    <string name="menu_gallery">Open Complaints</string>
+    <string name="notification_channel_id">Saaf_City</string>
+    <string name="notification_channel_name">Saaf City</string>
+    <string name="select_ip_address">Select IpAddress</string>
+</resources>
